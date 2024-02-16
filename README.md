@@ -1,1 +1,1 @@
-[![NPM Project Workflow]([https://github.com/Darshhhhh/BCDV-4033-lab1/actions/workflows/demo-flow.yml](https://github.com/mahi778/bcdv-4033-lab1/actions/workflows/demo.yml)/badge.svg)](https://github.com/mahi778/bcdv-4033-lab1/actions/workflows/demo.yml)
+[![NPM Project Workflow]([https://github.com/Darshhhhh/BCDV-4033-lab1/actions/workflows/demo-flow.yml](https://github.com/mahi778/bcdv-4033-lab1/actions/workflows/demo.yml/badge.svg)](https://github.com/mahi778/bcdv-4033-lab1/actions/workflows/demo.yml)
