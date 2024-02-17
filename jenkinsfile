@@ -1,0 +1,41 @@
+pipeline {
+    agent any
+    tools {
+        nodejs "NodeJS"
+    }
+    stages {
+        stage('Checkout') {
+            steps {
+                // Checkout the code from Git
+                git branch: 'main', credentialsId: 'bdc76926-5619-49ef-b06e-62349bbf320b', url: 'https://github.com/mahi778/bcdv-4033-lab1'
+            }
+        }
+        stage('Install Dependencies') {
+            steps {
+                // Install Node.js dependencies
+                sh 'npm install'
+            }
+        }
+        stage('Build') {
+            steps {
+                // Build your Node.js project
+                sh 'npm run build'
+            }
+        }
+        stage('Test') {
+            steps {
+                // Run tests scripts
+                sh 'npm test'
+            }
+        }
+    }
+ 
+    post {
+        success {
+            echo 'Pipeline succeeded!'
+        }
+        failure {
+            echo 'Pipeline failed!'
+        }
+    }
+}
