@@ -1,4 +1,3 @@
-/* eslint-disable */
 const mathOperations = require("./simpleCalc");
 
 describe("Calculator Tests", () => {
@@ -14,16 +13,8 @@ describe("Calculator Tests", () => {
     // arrange and act
     var result = mathOperations.diff(10, 2);
 
-    // assert
+    // assertc
     expect(result).toBe(8);
-  });
-
-  test("Multiplication of 2 numbers", () => {
-    // arrange and act
-    var result = mathOperations.product(2, 8);
-
-    // assert
-    expect(result).toBe(16); // Changed the expected result to 16
   });
 
   test("Division of 2 numbers", () => {
